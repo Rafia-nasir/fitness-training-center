@@ -21,7 +21,7 @@
   
  
 }
-.header-container, .change-habbit-container{
+.header-container, .change-habbit-container,.run-container,.team-section,.footer{
     width: 896px;
     margin: 0 auto;
     
@@ -200,9 +200,9 @@ color: #FFFFFF;
 /* header part style end */
 /* main part style start */
 #habbit{
-   height: 591px;
+   /* height: 591px; */
    background-color: rgb(5, 5, 5);
-   
+   max-width: 1440px;
 }
 
 
@@ -222,14 +222,13 @@ margin: 0 auto;
 
 }
 
-.habbit-description{
+.section-description{
    color: rgba(255, 255, 255, 0.5);
    font-size: 10px;
    line-height: 22px;
    letter-spacing: 0.5px;
    text-align: center;
-   display:flex;
-   flex-direction: column;
+   
   
 }
 
@@ -264,4 +263,73 @@ margin-top: 5px;
 .image-container{
    display: flex;
    justify-content: space-around;
+}
+
+/* run an extra mile away  style start */
+
+.run-container{
+ background-color: rgb(41, 38, 38);
+ max-width: 1020px;
+ margin: 0 auto;
+ margin-top: 70px;
+ border-radius: 10px;
+ display: flex;
+ justify-content: space-evenly;
+
+}
+
+.run-an-extra-content{
+   max-width: 363px;
+   margin-top: 15px;
+}
+
+.run-title{
+ color: rgb(255, 255, 255);
+font-size: 36px;
+font-weight: 900;
+text-align: left;
+}
+
+.run-description{
+color: rgba(255, 255, 255, 0.5);
+font-size: 10px;
+font-weight: 400;
+line-height: 15px;
+text-align: left;
+padding: 10px;
+}
+.run-img{
+   width: 330px;
+   margin-top: 15px;
+   border-radius: 5px;
+}
+
+/* team style start */
+
+ .team-img{
+   width: 300px;
+  
+ }
+.team-img-container  img {
+  width: 100%;
+
+}
+.team-img-container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 10px;
+   background-color: rgb(87, 76, 76);
+}
+
+/* footer  related style */
+
+.footer-section{
+   background-color: rgb(70, 57, 57);
+}
+.footer{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-column: 15px;
+  padding: 30px;
+
 }
